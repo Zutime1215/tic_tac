@@ -19,13 +19,23 @@ def print_board():
 	for i in range(3):
 		for j in range(3):
 			if board[i][j] == 'x' or board[i][j] == 'o':
-				print(board[i][j], end=" ")
+				print(board[i][j], end="")
 			else:
-				print('.', end=" ")
-		print("\n")
+				print('.', end="")
+			if j!=2:
+				print("|",end="")
+		print()
+		print("-|-|-")
 
-def tutorial():
-	
+
+print('''
+11|12|13
+--|--|--
+21|22|23
+--|--|--
+31|32|33
+Type Where you want to put x or o
+''')	
 
 x = 1
 print_board()
